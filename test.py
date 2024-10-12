@@ -34,6 +34,9 @@ class TestCalc:
     def test_multiply_unsuccess(self):
         assert self.calc.multiply(self, 1, 2) == 4
 
+    def test_multiply_success(self):
+        assert self.calc.multiply(self, 4, 0) == 0
+
     def teardown(self):
         print('Выполнение метода Teardown')
         
